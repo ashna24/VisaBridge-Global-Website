@@ -599,7 +599,7 @@ export default function VisaBridgeSite() {
   const [selectedService, setSelectedService] = useState(null);
 
   return (
-    <div className="flex flex-col min-h-screen font-sans selection:bg-amber-100 selection:text-amber-900">
+    <div className="flex flex-col min-h-screen font-sans selection:bg-amber-100 selection:text-amber-900 overflow-x-hidden w-full">
       <Navbar onHomeClick={() => setSelectedService(null)} />
       <main className="flex-grow">
         {selectedService ? (
